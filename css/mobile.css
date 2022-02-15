@@ -1,0 +1,129 @@
+/*--------fonts---------*/
+/*
+font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+/*-- Font Size --*/
+    --nav-title-size: 1.4rem;
+    --nav-section-size: 1.8rem;
+    --tittle-size: 3.6rem;
+    --text-size: 1.4rem;
+    --read-more-size: 1.4rem;
+    --card-name-size: 1.2rem;
+    --card-rol-size: 1rem;
+    --card-text-size: 1.8rem;
+    --footer-size: 1.4rem;
+/*-- Family Fonts --*/
+    --crimsom-pro: 'Crimson Pro', serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif; 
+/*-- Colors --*/ 
+    --color-bg: #181719;
+    --color-fg: #ffffff;
+    --color-one: #828282;
+    --color-two: #a9a9a9;
+    --color-three: #f2f2f2;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+} 
+
+.header {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+
+.page-header {
+    display: block;
+    width: 100%;
+    height: 64px;
+}
+
+.page-name, .menu-btn {
+    position: absolute;
+    top: 16px;
+    padding: 8px
+}
+
+.page-name {
+    left: 8px;
+    font-family: var(--crimsom-pro);
+    font-size: var(--nav-title-size);
+    border: 1px solid var(--color-fg);
+}
+
+.menu-btn {
+    right: 8px;
+    cursor: pointer;
+    color: var(--color-three);
+    font-size: var(--nav-section-size);
+}
+
+.nav {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 100%;
+    background-color: var(--color-bg);
+}
+
+.menu {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    list-style: none;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    right: 7%;
+    top: 3%;
+    color: var(--color-three);
+    font-size: var(--tittle-size);
+    cursor: pointer;
+}
+
+.menu__link {
+    display: block;
+    padding: 16px;
+    color: var(--color-fg);
+    font-size: var(--nav-section-size);
+    font-family: var(--montserrat);
+    text-decoration: none;
+}
+
+.actual-section {
+    position: relative;
+    font-weight: 700;
+}
+
+.actual-section:before {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: var(--color-fg);
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+}
