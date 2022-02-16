@@ -1,0 +1,65 @@
+:root {
+/*-- Font Size --*/
+    --tittle-size: 4.8rem;
+    --text-size: 2.4rem;
+    --read-more-size: 1.8rem;
+    --card-name-size: 1.4rem;
+    --card-rol-size: 1.2rem;
+    --card-text-size: 2.4rem;
+    --footer-size: 1.4rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header {
+    position: static;
+    margin: 28px;
+    width: auto;
+    height: auto;
+}
+
+.page-name {
+    position: static;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.nav {
+    z-index: auto;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.menu {
+    position: static;
+    display: flex;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+.menu__item {
+    margin: 0 24px;
+}
+
+.close-btn {
+    display: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 4%;
+    margin-bottom: 0;
+}
+
+.page-text {
+    width: 80%;
+}
