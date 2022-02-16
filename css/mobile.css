@@ -42,10 +42,10 @@ html {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-color: var(--color-bg);
 } 
 
 .header {
-    background-color: var(--color-bg);
     color: var(--color-fg);
 }
 
@@ -79,11 +79,18 @@ html {
     z-index: 1000;
     position: absolute;
     top: 0;
-    width: 100vw;
+    right: 0;
+    width: 0vw;
     height: 100vh;
-    margin-left: 100%;
     background-color: var(--color-bg);
+    overflow: hidden;
+    transition: all 0.5s;
 }
+
+.show-nav {
+    width: 100vw;
+}
+
 
 .menu {
     position: absolute;
@@ -127,3 +134,114 @@ html {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.page-text {
+    margin: 12px;
+}
+
+.page-text__title {
+    color: var(--color-fg);
+    font-size: var(--tittle-size);
+    font-family: var(--lora);
+    font-weight: 500;
+}
+
+.page-text__content {
+    color: var(--color-fg);
+    font-size: var(--text-size);
+    font-weight: 400;
+    font-family: var(--montserrat);
+    margin-right: 36%;
+}
+
+.page-text__link {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    height: 30px;
+    color: var(--color-fg);
+    font-size: var(--read-more-size);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: var(--montserrat);
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+
+.interior-image {
+    position: absolute;
+    width: 100vw;
+    padding: 12px;
+}
+
+.interior-image img {
+    width: 100%;
+}
+
+.card {
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    bottom: 0;
+    right: 8%;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    background-color: var(--color-bg);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.author-img {
+    height: 8vh;
+    padding: 12px 0 8px 20px;
+}
+
+.author-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.author-about {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-about p {
+    margin: 2px;
+}
+
+.author-about__name {
+    font-size: var(--card-name-size);
+    color: var(--color-fg);
+}
+
+.author-about__rol {
+    font-size: var(--card-rol-size);
+    color: var(--color-one);
+}
+
+.card__info {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.card__info p {
+    padding: 0 60px 0 16px;
+    font-size: var(--card-text-size);
+    font-family: var(--lora);
+    font-weight: 700;
+    color: var(--color-fg);
+
+}
+

@@ -4,6 +4,7 @@
         <title>Interior Consultant</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:768px)" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +18,12 @@
                     <div class="page-name">
                         <p class="page-name__text">THIS INTERIOR</p>
                     </div>
-                    <div class="menu-btn">
-                       <i class="fa-solid fa-bars"></i> 
+                    <div id="menu-btn" class="menu-btn">
+                       <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
-                <nav class="nav">
-                    <div class="close-btn">
+                <nav id="nav" class="nav">
+                    <div id="close-btn" class="close-btn">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                     <ul class="menu">
@@ -33,14 +34,12 @@
                     </ul>
                 </nav>
             </header>
-            <!--
             <main class="main">
                 <div class="page-text">
                     <h1 class="page-text__title">Modern Interior</h1>
                     <p class="page-text__content">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-                    <a class="page-text__linx" href="">
-                        <p>Read More</p>
-                        <img src="assets/arrow.svg" alt="arrow">
+                    <a class="page-text__link" href="">
+                        <p>Read More <i class="fa-solid fa-arrow-right-long"></i></p>
                     </a>
                 </div>
                 <div class="product">
@@ -50,7 +49,9 @@
                     </picture>
                     <div class="card">
                         <div class="author">
-                            <img class="author-img" src="https://imgur.com/j6tniCP.jpg" alt="">
+                            <div class="author-img">
+                                <img src="https://imgur.com/j6tniCP.jpg" alt="">
+                            </div>
                             <div class="author-about">
                                 <p class="author-about__name">Rafael Baculima</p>
                                 <p class="author-about__rol">Interior designer</p>
@@ -62,6 +63,7 @@
                     </div>
                 </div>
             </main>
+            <!--
             <footer class="footer">
                 
             <p class="credits">Made by <a href="https://github.com/sigladon/team-page" target="_blank">sigladon</a> - devChallenges.io</p>
