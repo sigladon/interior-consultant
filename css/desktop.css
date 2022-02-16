@@ -17,7 +17,7 @@
 
 .page-header {
     position: static;
-    margin: 28px;
+    margin: 3%;
     width: auto;
     height: auto;
 }
@@ -57,9 +57,16 @@
     display: flex;
     align-items: center;
     padding: 4%;
-    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 6%;
 }
 
 .page-text {
     width: 80%;
 }
+
+.card {
+    max-width: 480px;
+    max-height: 200px;
+}
+

@@ -189,7 +189,7 @@ html {
 .card {
     position: absolute;
     width: 80%;
-    height: 40%;
+    height: 44%;
     bottom: -16%;
     right: 8%;
     overflow: auto;
@@ -204,7 +204,7 @@ html {
 }
 
 .author-img {
-    height: 8vh;
+    height: 6em;
     padding: 12px 0 8px 20px;
 }
 
@@ -235,14 +235,11 @@ html {
 }
 
 .card__info {
-    width: 100%;
-    height: 50%;
-    display: grid;
-    place-items: center;
+    margin: auto auto 4% 4%;
 }
 
 .card__info p {
-    padding: 0 60px 0 16px;
+    padding: 0 32% 0 16px;
     font-size: var(--card-text-size);
     font-family: var(--lora);
     font-weight: 700;
